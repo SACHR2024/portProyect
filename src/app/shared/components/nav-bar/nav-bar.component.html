@@ -1,1 +1,8 @@
-<p>nav-bar works!</p>
+<div class="navBar">
+  <button mat-button [matMenuTriggerFor]="homeButton">Home</button>
+
+  <mat-menu #homeButton="matMenu" yPosition="below">
+    <button mat-menu-item> Welcome</button>
+  </mat-menu>
+
+</div>

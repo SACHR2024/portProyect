@@ -1,0 +1,8 @@
+.navBar{
+  padding: 5px;
+  width: 80%;
+  background-color: chocolate;
+  position: relative;
+  margin-left: 10%;
+  border-radius: 5px;
+}
