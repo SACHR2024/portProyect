@@ -5,7 +5,15 @@ const routes: Routes = [
   {
     path:'',
     loadChildren:() => import('./home/home.module').then(m => m.HomeModule)
-  }
+  },
+  {
+    path:'sachrTube',
+    loadChildren:() => import ('./sachrtube/sachrtube.module').then(m => m.SachrtubeModule)
+  },
+  // {
+  //   path:'**',
+  //   loadChildren:() => import('./home/home.module').then(m => m.HomeModule)
+  // },
 ];
 
 @NgModule({
