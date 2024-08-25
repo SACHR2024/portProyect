@@ -5,6 +5,7 @@ import { SachrtubeRoutingModule } from './sachrtube-routing.module';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { ContentListComponent } from './components/content-list/content-list.component';
 import { SeaarchContentComponent } from './components/seaarch-content/seaarch-content.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import { SeaarchContentComponent } from './components/seaarch-content/seaarch-co
   ],
   imports: [
     CommonModule,
-    SachrtubeRoutingModule
+    SachrtubeRoutingModule,
   ]
 })
 export class SachrtubeModule { }
