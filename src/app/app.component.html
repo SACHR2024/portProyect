@@ -1,2 +1,22 @@
-<h1>Start Proyect</h1>
-<hr color="purple">
+<div class="masterContent">
+  <div class="toHeader">
+    <button mat-flat-button [matMenuTriggerFor]="mainNavBar" class="mainButtonMenu">Menu</button>
+    <mat-menu #mainNavBar="matMenu">
+      <button mat-menu-item routerLink="">Welcome</button>
+      <button mat-menu-item routerLink="aboutMe">About Me</button>
+    </mat-menu>
+
+    <button mat-flat-button routerLink="sachrTube" routerLinkActive="active" class="mainButtonMenu">SachrTube</button>
+
+    <button mat-flat-button routerLink="sachrTube" routerLinkActive="active" class="mainButtonMenu">Join us</button>
+  </div>
+
+  <div class="toBody">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="toFooter">
+    Samuel chirinos - <i>SACHR</i>
+  </div>
+
+</div>
